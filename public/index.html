@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootcampInit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .disabled {
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center m-4">
+            <h1>Reconocimiento de emociones</h1>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary rounded-pill" onclick="startListening()">Empezar</button>
+            <button class="btn btn-danger rounded-pill" onclick="stopListening()">Detener</button>
+        </div>
+        <div class="text-center m-4">
+            <p id="salida">texto de salida</p>
+            <br>
+            <img src="./img/feliz.png" class="mr-2 disabled" id="img-feliz">
+            <img src="./img/triste.png" class="mr-2 disabled" id="img-triste">
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
