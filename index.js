@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 const brain = require("brain.js");
 const network = new brain.recurrent.LSTM();
@@ -20,7 +19,9 @@ app.get("/evaluar/:texto", (req, res) => {
   });
 });
 
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
-  console.log("Server on PORT " + PORT);
+  console.log("server on por" + PORT);
 });
 //holas
